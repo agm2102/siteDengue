@@ -1,6 +1,6 @@
-const sintomas = document.querySelector(".sintomas")
-const diagnostico = document.querySelector(".diagnostico")
-const prevencao = document.querySelector(".prevencao")
+const sintomas = document.querySelector("#sintomas")
+const diagnostico = document.querySelector("#diagnostico")
+const prevencao = document.querySelector("#prevencao")
 const btnInicio = document.querySelector(".btnInicio")
 
 let alturaTela = window.screen.height
@@ -32,7 +32,7 @@ diagnostico.addEventListener('click', () => {
     switch (alturaTela) {
         case 1440:
             window.scroll({
-                top: ((alturaTela * 81) / 100),
+                top: ((alturaTela * 128) / 100),
                 behavior: "smooth"
             })
             break;
@@ -54,7 +54,7 @@ prevencao.addEventListener('click', () => {
     switch (alturaTela) {
         case 1440:
             window.scroll({
-                top: ((alturaTela * 200) / 100),
+                top: ((alturaTela * 139) / 100),
                 behavior: "smooth"
             })
             break;
