@@ -1,9 +1,11 @@
-const sintomas = document.querySelector("#sintomas")
-const diagnostico = document.querySelector("#diagnostico")
-const prevencao = document.querySelector("#prevencao")
-const btnInicio = document.querySelector(".btnInicio")
+let sintomas = document.querySelector("#sintomas")
+let proliferacao = document.querySelector("#proliferacao")
+let diagnostico = document.querySelector("#diagnostico")
+let prevencao = document.querySelector("#prevencao")
+let tratamento = document.querySelector("#tratamento")
+let btnInicio = document.querySelector(".btnInicio")
 
-let alturaTela = window.screen.height
+const alturaTela = window.screen.height
 
 sintomas.addEventListener('click', () => {
 
