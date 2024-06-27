@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(185, 220, 236);
+    background-color: #fffafa;
 }
 
 .container {
@@ -16,27 +16,34 @@ body {
     align-items: center;
     justify-content: center;
     width: 80%;
-    background-color: rgb(147, 194, 216);
+    background-color: #f8f8ff;
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 1px 1px 15px 2px black;
-    font-size: 18px;
+    font-size: 18px;    
 }
 
 .sobreDengue {
-    text-align: justify;
-    width: 60%;
+    justify-content: center;
+    position: relative;
+    width: 80%;
+    height: 1120px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
 }
 
 .titulo {
     width: 100%;
     height: 100px;
-    background: radial-gradient(rgb(143, 182, 197), rgb(66, 115, 160), rgb(33, 128, 172));
+    background-color: white;
+    /*radial-gradient(rgb(143, 182, 197), rgb(66, 115, 160), rgb(33, 128, 172))*/
     text-align: center;
 }
 
 h1 {
     position: absolute;
     top: 2.5%;
+    font-family: 'Times New Roman', Times, serif
 }
 
 .dengueIcon {
@@ -52,8 +59,9 @@ h1 {
 }
 
 .imageDengue {
-    width: 100%;
-    height: 650px;
+    margin-left: 5%;
+    width: 90%;
+    height: 700px;
 }
 
 .barraNavegacao {
@@ -61,8 +69,10 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: repeating-radial-gradient(rgb(113, 165, 199), rgb(44, 156, 175), rgb(36, 117, 163));
+    background-color: whitesmoke;/*repeating-radial-gradient(rgb(113, 165, 199), rgb(44, 156, 175), rgb(36, 117, 163));*/
     height: 50px;
+    box-shadow: 0px 6px 7px 0px;
+    border-radius: 10px;
 }
 
 .boxNavegacao {
@@ -70,15 +80,15 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 11.9%;
+    width: 12.7%;
     border-top: solid 3px transparent;
     transition: 0.5s ease-in-out;
 
 }
 .boxNavegacao:hover{
     cursor: pointer;
-    color: greenyellow;
-    border-top-color: greenyellow;  
+    color: red;
+    border-top-color: red;  
     transition: 0.5s ease-in-out;
 }
 
@@ -102,4 +112,26 @@ h1 {
     z-index: 10;
     background-image: url(images/setapracima.png);
     background-size: cover;
+}
+#sessaoOqueEdengue{
+    margin-top: 2%;
+    border-radius: 30px;
+    padding: 28px;
+    width: 95%;
+    position: absolute;
+    transform: translateY(0);
+    transition: 2s ease-in-out;
+    background-color: whitesmoke; 
+    box-shadow: 1px 1px 15px 2px black;  
+}
+.sessao{
+    margin-top: 2%;
+    border-radius: 30px;
+    padding: 28px;
+    background-color: whitesmoke;
+    width: 95%;
+    position: absolute;
+    transform: translateX(200%);
+    transition: 2s ease-in-out;
+    box-shadow: 1px 1px 15px 2px black;  
 }
