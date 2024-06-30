@@ -57,8 +57,7 @@ h1 {
 }
 
 .imageDengue {
-    margin-left: 5%;
-    width: 90%;
+    width: 100%;
     height: 700px;
 }
 
@@ -90,46 +89,30 @@ h1 {
     transition: 0.5s ease-in-out;
 }
 
-.btnInicioContainer {
-    width: 100%;
-    position: relative;
-    height: 30px;
-}
-
-.btnInicio {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    float: right;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    background-image: url(images/setapracima.png);
-    background-size: cover;
-}
 #sessaoOqueEdengue{
-    margin-top: 2%;
-    border-radius: 30px;
-    padding: 28px;
-    width: 95%;
-    position: absolute;
     transform: translateY(0);
-    transition: 2s ease-in-out;
-    background-color: whitesmoke; 
-    box-shadow: 1px 1px 15px 2px black;  
 }
 .sessao{
     margin-top: 2%;
     border-radius: 30px;
     padding: 28px;
     background-color: whitesmoke;
-    width: 95%;
+    width: 85%;
     position: absolute;
     transform: translateX(200%);
     transition: 2s ease-in-out;
     box-shadow: 1px 1px 15px 2px black;  
+    overflow-y: scroll;
+}
+@media (max-height: 1080px){
+    #sobreDengue{
+        height: 910px;
+    }
+    .sessao{
+        height: 800px;
+        padding: 30px 50px 30px 50px;
+    }
+    .imageDengue{
+        height: 490px;
+    }
 }

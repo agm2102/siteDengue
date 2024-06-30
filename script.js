@@ -83,26 +83,3 @@ document.addEventListener('keydown', (eve) => {
         window.location.reload()
     }
 })
-window.addEventListener('load', () => {
-    redimensionar();
-})
-function redimensionar() {
-
-    let sobreDengue = document.getElementById('sobreDengue')
-    var windowHeight = window.innerHeight;
-    var screenHeight = screen.height;
-
-    if (screenHeight >= 1140) {
-        sobreDengue.style.height = (windowHeight - 171) + "px"
-        console.log(windowHeight - 171)
-    }
-    else if (screenHeight >= 1080) {    
-        sobreDengue.style.height = (windowHeight - 172) + "px"
-        console.log(windowHeight - 172)
-    }
-    else if(screenHeight >= 720){
-        sobreDengue.style.height = (windowHeight - 170) + "px"
-        console.log(windowHeight - 173)
-    }
-
-}
