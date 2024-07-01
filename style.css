@@ -25,36 +25,34 @@ body {
 #sobreDengue {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     width: 80%;
-    height: 1270px;
+    height: 1140px;
     overflow-x: hidden;
     display: flex;
 }
 
-.titulo {
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     width: 100%;
     height: 100px;
     background-color: white;
     /*radial-gradient(rgb(143, 182, 197), rgb(66, 115, 160), rgb(33, 128, 172))*/
-    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-h1 {
-    position: absolute;
-    top: 2.5%;
-    font-family: 'Times New Roman', Times, serif
-}
-
 .dengueIcon {
     height: 100%;
-    position: relative;
-    float: right;
+    position: absolute;
+    right: 0;
 }
 
 .uniparlogo {
-    position: relative;
-    float: left;
+    position: absolute;
+    left: 0;
     height: 100%;
 }
 
@@ -95,12 +93,11 @@ h1 {
     transform: translateY(0);
 }
 .sessao{
-    margin-top: 2%;
     border-radius: 30px;
-    padding: 30px;
+    padding: 30px 100px 0px 100px;    
     background-color: whitesmoke;
     width: 85%;
-    height: 1100px;
+    height: 1000px;
     position: absolute;
     transform: translateX(200%);
     transition: 2s ease-in-out;
@@ -108,14 +105,55 @@ h1 {
     overflow-y: scroll;
 }
 @media screen and (max-height: 1080px){
+    .header{
+        height: 65px;
+    }
+    #headerTitulo{
+        font-size: 20px;
+    }
+    .barraNavegacao{
+        height: 35px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 15px;
+    }
     #sobreDengue{
-        height: 910px;
+        height: 830px;
     }
     .sessao{
-        height: 800px;
-        padding: 30px 50px 30px 50px;
+        font-size: 14px;
+        height:750px;
+        padding: 10px 50px 10px 50px;
     }
     .imageDengue{
-        height: 490px;
+        height: 510px;
+    }
+
+}
+@media screen and (max-height: 720px){
+    .header{
+        height: 50px;
+    }
+    #headerTitulo{
+        font-size: 18px;
+    }
+    .barraNavegacao{
+        height: 25px;
+        font-size: 12px;
+    }
+    h1{
+        font-size: 13px;
+    }
+    #sobreDengue{
+        height: 495px;
+    }
+    .sessao{
+        font-size: 12px;
+        height: 450px;
+        padding: 10px 30px 10px 30px;
+    }
+    .imageDengue{
+        height: 250px;
     }
 }
