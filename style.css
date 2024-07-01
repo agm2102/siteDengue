@@ -23,9 +23,11 @@ body {
 }
 
 #sobreDengue {
+    display: flex;
     justify-content: center;
     position: relative;
     width: 80%;
+    height: 1270px;
     overflow-x: hidden;
     display: flex;
 }
@@ -95,16 +97,17 @@ h1 {
 .sessao{
     margin-top: 2%;
     border-radius: 30px;
-    padding: 28px;
+    padding: 30px;
     background-color: whitesmoke;
     width: 85%;
+    height: 1100px;
     position: absolute;
     transform: translateX(200%);
     transition: 2s ease-in-out;
     box-shadow: 1px 1px 15px 2px black;  
     overflow-y: scroll;
 }
-@media (max-height: 1080px){
+@media screen and (max-height: 1080px){
     #sobreDengue{
         height: 910px;
     }
